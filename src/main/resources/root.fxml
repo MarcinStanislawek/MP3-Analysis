@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #242582;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mp3analysis.controller.RootController">
+   <children>
+      <Pane layoutX="-160.0" layoutY="169.0" prefHeight="349.0" prefWidth="726.0" rotate="-144.5" style="-fx-background-color: #2f2fa2;" />
+      <Button onAction="#chooseDirectoryWithMp3s" layoutX="405.0" layoutY="92.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #F64C72;" text="WYBIERZ FOLDER Z MP3" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="405.0" layoutY="211.0" mnemonicParsing="false" onAction="#saveValues" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #F64C72;" text="ZAPISZ LISTĘ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="mp3Directory" layoutX="125.0" layoutY="92.0" prefHeight="46.0" prefWidth="264.0" style="-fx-background-color: #99738e; -fx-border-color: #F64C72;" />
+      <Label fx:id="libraryDirectory" layoutX="125.0" layoutY="154.0" prefHeight="46.0" prefWidth="264.0" style="-fx-background-color: #99738e; -fx-border-color: #F64C72;" />
+      <Text fill="#99738e" layoutX="65.0" layoutY="50.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STWÓRZ BIBLIOTEKĘ UTWORÓW!" textAlignment="CENTER" wrappingWidth="469.9830722808838">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="isDone" layoutX="405.0" layoutY="264.0" prefHeight="46.0" prefWidth="123.0" textAlignment="CENTER" textFill="WHITE">
+              <font>
+                 <Font name="System Bold" size="12.0" />
+              </font>
+      </Label>
+      <Button onAction="#chooseDirectoryToSaveLibrary" layoutX="405.0" layoutY="154.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: #F64C72;" text="WYBIERZ FOLDER DO ZAPISANIA" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
